@@ -1,4 +1,7 @@
-# L3 computation for Paley graphs
+# Computations on Paley clique number
+This program computes clique number of Paley graph under relaxation hierarchies such as:
+- Lovasz-Theta (SOS-2)
+- Block-diagonal hierarchy of order 2 (L2) and order 3 (L3)
 
 ## Running locally
 
@@ -33,6 +36,7 @@ See `CMakeLists.txt` for version requirements. Edit code in `main.cpp` and run t
 mkdir build
 cd build
 cmake ..
+make
 ./ exec
 ```
 
