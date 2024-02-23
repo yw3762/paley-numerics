@@ -5,6 +5,7 @@ project(paley_l3)
 set(CMAKE_CXX_COMPILER "clang++")
 set(CMAKE_CXX_STANDARD 20)
 
+
 # Read environment variables from .env.local
 file(STRINGS ${CMAKE_SOURCE_DIR}/env/.env.local ENV_VARIABLES)
 
