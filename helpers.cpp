@@ -1,7 +1,7 @@
 #include <algorithm>
 #include <cassert>
 #include <functional>
-#include <iostream>
+#include "fusion.h"
 
 namespace paley::helper {
 
