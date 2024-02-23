@@ -7,7 +7,7 @@
 
 #include <iostream>
 #include "../examples/sdo.cpp"
-#include "../lib/helpers.cpp"
+#include "../src/helpers.cpp"
 #include "../src/relaxations/block_diagonal.cpp"
 #include "../src/relaxations/lovasz.cpp"
 
