@@ -1,4 +1,4 @@
-#include "headers.h"
+#include "../includes/headers.h"
 
 const long long MIN_P = 821;
 const long long MAX_P = 997;

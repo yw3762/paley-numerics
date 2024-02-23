@@ -5,9 +5,6 @@ project(paley_l3)
 set(CMAKE_CXX_COMPILER "clang++")
 set(CMAKE_CXX_STANDARD 20)
 
-set(CMAKE_BINARY_DIR ${CMAKE_SOURCE_DIR}/build)
-set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR})
-set(LIBRARY_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 
 # Read environment variables from .env.local
 file(STRINGS ${CMAKE_SOURCE_DIR}/env/.env.local ENV_VARIABLES)
@@ -27,7 +24,7 @@ add_custom_target(fusion
         COMMAND make install -C $ENV{HOME}/${MSKHOME}/mosek/10.1/tools/platform/${PLATFORM}/src/fusion_cxx
 )
 
-add_executable(exec main.cpp)
+add_executable(exec src/main.cpp)
 
 target_compile_options(exec PRIVATE -Wl,-headerpad_max_install_names -stdlib=libc++ -g ${IPATHS})
 target_link_options(exec PRIVATE ${LPATHS})
