@@ -56,3 +56,4 @@ lib/*
 bin/*
 test/test_runner
 env/*.local
+env/.env.local
