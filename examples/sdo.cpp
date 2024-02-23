@@ -21,7 +21,9 @@
 //                   X >> 0,  x0 >= (x1^2 + x2^2) ^ (1/2)
 //
 
-#include "headers.h"
+#include <fusion.h>
+#include "../includes/headers.h"
+
 
 using namespace mosek::fusion;
 using namespace monty;
@@ -53,8 +55,3 @@ int sdo() {
 
   return 0;
 }
-
-//int main() {
-//  sdo();
-//  return 0;
-//}
